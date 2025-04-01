@@ -1,0 +1,22 @@
+body {
+  --psn-foreground-plus: 240 5.9% 10%;
+  --psn-foreground-primary: 240 3.7% 15.9%;
+  --psn-foreground-secondary: 240 5% 64.9%;
+  --psn-foreground-white: 0 0% 98%;
+
+  --psn-background: 0 0% 98%;
+  --psn-background-primary: 240 5.9% 10%;
+  --psn-background-secondary: 240 5.9% 90%;
+
+  --psn-platinum: 187 92.4% 69%;
+  --psn-gold: 47.9 95.8% 53.1%;
+  --psn-silver: 240 5.9% 90%;
+  --psn-bronze: 17.5 88.3% 40.4%;
+}
+
+.psn-icon {
+  svg {
+    width: 1em;
+    height: 1em;
+  }
+}

@@ -1,0 +1,8 @@
+.psn-profile {
+  width: 340px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: hsl(var(--psn-background));
+  display: flex;
+  flex-direction: column;
+}

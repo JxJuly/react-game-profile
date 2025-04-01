@@ -1,0 +1,31 @@
+.psn-user-summary {
+  display: flex;
+  column-gap: 16px;
+  align-items: end;
+  padding: 12px;
+  background-color: hsl(var(--psn-background-primary));
+
+  .psn-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 1px solid hsl(var(--psn-background-secondary));
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .psn-user-id {
+    font-size: 18px;
+    font-weight: 500;
+    color: hsl(var(--psn-foreground-white));
+  }
+  .summary-trophies {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+}

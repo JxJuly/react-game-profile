@@ -1,0 +1,1 @@
+export { PsnTrophies } from './trophies';

@@ -1,0 +1,22 @@
+.psn-trophy {
+  display: inline-flex;
+  column-gap: 2px;
+  align-items: center;
+}
+.psn-trophy.platinum {
+  color: hsl(var(--psn-platinum));
+}
+.psn-trophy.gold {
+  color: hsl(var(--psn-gold))
+}
+.psn-trophy.silver {
+  color: hsl(var(--psn-silver))
+}
+.psn-trophy.bronze {
+  color: hsl(var(--psn-bronze))
+}
+
+.psn-trophies {
+  display: flex;
+  column-gap: 4px;
+}
