@@ -4,7 +4,7 @@ import { clsx } from 'clsx';
 
 import { TrophyIcon } from '../icons/trophy';
 
-import type { PsnTrophyType, TrophyCounts } from '../../types';
+import type { PsnTrophyType, PsnTrophyCounts } from '../../types';
 
 import './trophies.css';
 
@@ -18,7 +18,7 @@ const PsnTrophy: React.FC<{ count: number; type: PsnTrophyType }> = ({ count, ty
 };
 
 interface PsnTrophiesProps {
-  trophies: Partial<TrophyCounts>;
+  trophies: Partial<PsnTrophyCounts>;
   className?: string;
 }
 

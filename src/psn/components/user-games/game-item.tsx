@@ -2,15 +2,15 @@ import React from 'react';
 
 import { PsnTrophies } from '../trophies';
 
-import type { PsnUserGame, TrophyCounts } from '../../types';
+import type { IPsnUserGame, PsnTrophyCounts } from '../../types';
 
 import './game-item.css';
 
 interface PsnGameItemProps {
-  game: PsnUserGame;
+  game: IPsnUserGame;
 }
 
-const sumTrophyCount = (trophies: Partial<TrophyCounts>) => {
+const sumTrophyCount = (trophies: Partial<PsnTrophyCounts>) => {
   return Object.values(trophies).reduce((pre, cur) => pre + cur, 0);
 };
 

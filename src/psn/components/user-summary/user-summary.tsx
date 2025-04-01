@@ -7,7 +7,7 @@ import type { IPsnUserSummary } from '../../types';
 import './user-summary.css';
 
 interface PsnUserSummaryProps {
-  summary: IPsnUserSummary;
+  summary?: IPsnUserSummary;
 }
 
 const PsnUserSummary: React.FC<PsnUserSummaryProps> = ({ summary }) => {
@@ -15,14 +15,14 @@ const PsnUserSummary: React.FC<PsnUserSummaryProps> = ({ summary }) => {
     <div className="psn-user-summary">
       {/* avatar */}
       <div className="psn-avatar">
-        <img src={summary.avatarUrl} />
+        <img src={summary?.avatarUrl} />
       </div>
       {/* summary */}
       <div>
         {/* name */}
-        <div className="psn-user-id">{summary.onlineId}</div>
+        <div className="psn-user-id">{summary?.onlineId}</div>
         {/* trophy */}
-        <PsnTrophies trophies={summary.earnedTrophies || {}} className="summary-trophies" />
+        <PsnTrophies trophies={summary?.earnedTrophies || {}} className="summary-trophies" />
       </div>
     </div>
   );

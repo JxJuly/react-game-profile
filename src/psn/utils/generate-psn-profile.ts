@@ -18,9 +18,12 @@ const generatePsnProfile = async (npsso: string) => {
     psnApi.getUserPlayedGames(authorization, 'me', {
       offset: 0,
       limit: 50,
-      categories: 'ps4_game, ps5_native_game',
+      categories: 'ps4_game,ps5_native_game,pspc_game,unknown',
     }),
-    await psnApi.getUserTitles(authorization, 'me'),
+    await psnApi.getUserTitles(authorization, 'me', {
+      offset: 0,
+      limit: 50,
+    }),
   ]);
 
   const summary: IPsnUserSummary = {
@@ -36,13 +39,14 @@ const generatePsnProfile = async (npsso: string) => {
       );
       return {
         ...game,
+        progress: currentGameTrophy?.progress || 0,
         definedTrophies: currentGameTrophy?.definedTrophies,
         earnedTrophies: currentGameTrophy?.earnedTrophies,
         playDurationOnlyHour: parseISODuration(game.playDuration),
       };
     })
     // 按照时长排序
-    .sort((a, b) => b.playDurationOnlyHour - a.playDurationOnlyHour)
+    .sort((a, b) => b.progress - a.progress)
     // 取前 5
     .slice(0, 5);
 
