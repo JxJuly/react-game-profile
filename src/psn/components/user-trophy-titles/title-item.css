@@ -17,12 +17,6 @@
       object-position: center;
     }
   }
-  .play-duration {
-    font-size: 12px;
-    width: 30px;
-    text-align: end;
-    color: hsl(var(--psn-foreground-plus));
-  }
   .game-info {
     display: flex;
     flex-direction: column;
@@ -31,10 +25,14 @@
     width: 0;
     flex-grow: 1;
   }
-  .game-name {
+  .trophy-title-name {
     font-size: 14px;
     color: hsl(var(--psn-foreground-plus));
     font-weight: 500;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
   .play-progress {
     .progress-info {

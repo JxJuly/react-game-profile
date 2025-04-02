@@ -1,3 +1,6 @@
+import type { TrophyTitle } from 'psn-api';
+
+export type PsnTrophyTitle = TrophyTitle;
 export type PsnTrophyType = 'platinum' | 'gold' | 'silver' | 'bronze';
 
 export interface PsnTrophyCounts {
@@ -26,5 +29,5 @@ export interface IPsnUserGame {
 
 export interface IPsnProfile {
   summary?: IPsnUserSummary;
-  games?: IPsnUserGame[];
+  trophyTitles?: PsnTrophyTitle[];
 }
