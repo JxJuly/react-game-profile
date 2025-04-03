@@ -12,7 +12,15 @@
 
 - 使用 css 变量可便捷的覆写样式；
 
-- 支持按需加载、Typescript 友好、ESM 版本。
+- 支持按需加载、Typescript 友好、ESM Module。
+
+## 安装 | Installation
+
+运行以下命令：
+
+```
+npm install @july_cm/react-game-profile
+```
 
 ## PsnProfile
 
@@ -84,7 +92,9 @@ export const App = () => {
 https://steamcommunity.com/profiles/76561******134369/
 ```
 
-其中 apiKey 请私密保管，steamId 是可公开数据。组件使用方式如下：
+其中 apiKey 请私密保管，steamId 是可公开数据。
+
+组件使用方式如下：
 
 ```tsx
 import { SteamProfile } from '@july_cm/react-game-profile/steam';
