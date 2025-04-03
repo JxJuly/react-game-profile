@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { PlaystationIcon } from '../icons';
 import { PsnTrophies } from '../trophies';
 
 import type { IPsnUserSummary } from '../../types';
@@ -23,6 +24,9 @@ const PsnUserSummary: React.FC<PsnUserSummaryProps> = ({ summary }) => {
         <div className="psn-user-id">{summary?.onlineId}</div>
         {/* trophy */}
         <PsnTrophies trophies={summary?.earnedTrophies || {}} className="summary-trophies" />
+      </div>
+      <div className="ps-logo">
+        <PlaystationIcon />
       </div>
     </div>
   );

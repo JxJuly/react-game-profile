@@ -1,8 +1,8 @@
-.psn-profile {
+.steam-profile {
   width: 340px;
   border-radius: 8px;
   overflow: hidden;
-  background-color: hsl(var(--psn-background));
+  background-color: hsl(var(--steam-background));
   display: flex;
   flex-direction: column;
   * {

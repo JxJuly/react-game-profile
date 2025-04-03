@@ -2,7 +2,9 @@
   "name": "@july_cm/react-game-profile",
   "version": "0.0.1",
   "type": "module",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "exports": {
     "./psn": {
       "types": "./dist/types/psn/index.d.ts",
@@ -11,6 +13,14 @@
     },
     "./psn/*": {
       "import": "./dist/psn/*"
+    },
+    "./steam": {
+      "types": "./dist/types/steam/index.d.ts",
+      "require": "./dist/steam/index.js",
+      "import": "./dist/steam/index.js"
+    },
+    "./steam/*": {
+      "import": "./dist/steam/*"
     },
     ".": {
       "types": "./dist/types/index.d.ts",
@@ -27,7 +37,8 @@
   },
   "dependencies": {
     "clsx": "^2.1.1",
-    "psn-api": "^2.11.2"
+    "psn-api": "^2.11.2",
+    "steamwebapi-ts": "^1.10.0"
   },
   "devDependencies": {
     "@july_cm/eslint-config": "^2.3.0",

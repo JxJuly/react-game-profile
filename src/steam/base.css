@@ -1,0 +1,29 @@
+@layer base {
+  body {
+    --steam-slate-50: 210 40% 98%;
+    --steam-slate-200: 214.3 31.8% 91.4%;
+    --steam-slate-400: 215 20.2% 65.1%;
+    --steam-slate-800: 217.2 32.6% 17.5%;
+    --steam-slate-900: 222.2 47.4% 11.2%;
+
+    --steam-red-600: 0 72.2% 50.6%;
+  
+    --steam-foreground-plus: var(--steam-slate-900);
+    --steam-foreground-primary: var(--steam-slate-800);
+    --steam-foreground-secondary: var(--steam-slate-400);
+    --steam-foreground-inverse: var(--steam-slate-50);
+  
+    --steam-background: var(--steam-slate-50);
+    --steam-background-primary: var(--steam-slate-900);
+    --steam-background-secondary: var(--steam-slate-200);
+
+    --steam-level-border: var(--steam-red-600);
+  }
+}
+
+.steam-icon {
+  svg {
+    width: 1em;
+    height: 1em;
+  }
+}

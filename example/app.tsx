@@ -1,6 +1,8 @@
 import React from 'react';
 
+import { steamMockProfile } from './steam-mock-profile';
 import { PsnProfileUI } from '../src/psn';
+import { SteamProfileUI } from '../src/steam';
 
 import type { IPsnProfile } from '../src/psn';
 
@@ -70,5 +72,10 @@ const profile: IPsnProfile = {
 };
 
 export const App = () => {
-  return <PsnProfileUI profile={profile} />;
+  return (
+    <div>
+      <PsnProfileUI profile={profile} />
+      <SteamProfileUI profile={steamMockProfile} />
+    </div>
+  );
 };

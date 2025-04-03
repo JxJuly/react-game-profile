@@ -1,0 +1,48 @@
+.steam-user-games {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.steam-game-item {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: end;
+  column-gap: 12px;
+  .game-cover {
+    width: 80px;
+    height: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  .game-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 0;
+    flex-grow: 1;
+  }
+  .game-name {
+    font-size: 16px;
+    color: hsl(var(--steam-foreground-plus));
+    font-weight: 500;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .played-time {
+    font-size: 12px;
+    color: hsl(var(--steam-foreground-secondary));
+  }
+}

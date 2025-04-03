@@ -1,0 +1,56 @@
+.steam-user-summary {
+  display: flex;
+  column-gap: 16px;
+  align-items: end;
+  padding: 12px;
+  background-color: hsl(var(--steam-background-primary));
+  position: relative;
+
+  .steam-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 1px solid hsl(var(--steam-background-secondary));
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .steam-user-name {
+    font-size: 18px;
+    font-weight: 500;
+    color: hsl(var(--steam-foreground-inverse));
+  }
+  .steam-user-description {
+    margin-top: 6px;
+    color: hsl(var(--steam-foreground-inverse));
+    .steam-level {
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      column-gap: 8px;
+      .steam-level-num {
+        border-radius: 100%;
+        border: 2px solid hsl(var(--steam-level-border));
+        width: 28px;
+        height: 28px;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  .steam-logo {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 27px;
+    color: hsl(var(--steam-foreground-inverse));
+  }
+}

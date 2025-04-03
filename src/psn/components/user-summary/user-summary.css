@@ -4,6 +4,7 @@
   align-items: end;
   padding: 12px;
   background-color: hsl(var(--psn-background-primary));
+  position: relative;
 
   .psn-avatar {
     width: 60px;
@@ -22,10 +23,18 @@
   .psn-user-id {
     font-size: 18px;
     font-weight: 500;
-    color: hsl(var(--psn-foreground-white));
+    color: hsl(var(--psn-foreground-inverse));
   }
   .summary-trophies {
     font-size: 14px;
     margin-top: 12px;
+  }
+
+  .ps-logo {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 27px;
+    color: hsl(var(--psn-foreground-inverse));
   }
 }

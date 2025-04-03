@@ -11,6 +11,7 @@ const config: UserConfig = {
       entry: {
         main: './src/index.ts',
         psn: './src/psn/index.ts',
+        steam: './src/steam/index.ts',
       },
       formats: ['es'],
     },

@@ -1,17 +1,30 @@
-body {
-  --psn-foreground-plus: 240 5.9% 10%;
-  --psn-foreground-primary: 240 3.7% 15.9%;
-  --psn-foreground-secondary: 240 5% 64.9%;
-  --psn-foreground-white: 0 0% 98%;
-
-  --psn-background: 0 0% 98%;
-  --psn-background-primary: 240 5.9% 10%;
-  --psn-background-secondary: 240 5.9% 90%;
-
-  --psn-platinum: 187 92.4% 69%;
-  --psn-gold: 47.9 95.8% 53.1%;
-  --psn-silver: 240 5.9% 90%;
-  --psn-bronze: 17.5 88.3% 40.4%;
+@layer base {
+  body {
+    --psn-zinc-50: 0 0% 98%;
+    --psn-zinc-200: 240 5.9% 90%;
+    --psn-zinc-400: 240 5% 64.9%;
+    --psn-zinc-800: 240 3.7% 15.9%;
+    --psn-zinc-900: 240 5.9% 10%;
+  
+    --psn-cyan-300: 187 92.4% 69%;
+    --psn-yellow-400: 47.9 95.8% 53.1%;
+    --psn-orange-700: 17.5 88.3% 40.4%;
+  
+    --psn-foreground-plus: var(--psn-zinc-900);
+    --psn-foreground-primary: var(--psn-zinc-800);
+    --psn-foreground-secondary: var(--psn-zinc-400);
+    --psn-foreground-inverse: var(--psn-zinc-50);
+  
+    --psn-background: var(--psn-zinc-50);
+    --psn-background-primary: var(--psn-zinc-900);
+    --psn-background-secondary: var(--psn-zinc-200);
+  
+    /* trophy color */
+    --psn-platinum: var(--psn-cyan-300);
+    --psn-gold: var(--psn-yellow-400);
+    --psn-silver: var(--psn-zinc-200);
+    --psn-bronze: var(--psn-orange-700);
+  }
 }
 
 .psn-icon {
