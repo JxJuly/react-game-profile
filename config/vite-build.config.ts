@@ -24,7 +24,7 @@ const config: UserConfig = {
         assetFileNames: '[name]/[name][extname]',
       },
     },
-    outDir: './dist',
+    outDir: './lib',
   },
   plugins: [
     dts({
@@ -33,7 +33,7 @@ const config: UserConfig = {
         jsx: ts.JsxEmit.ReactJSX,
       },
       entryRoot: './src',
-      outDir: './dist/types',
+      outDir: './lib/types',
     }),
     react(),
   ],
