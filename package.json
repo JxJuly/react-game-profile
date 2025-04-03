@@ -2,6 +2,9 @@
   "name": "@july_cm/react-game-profile",
   "version": "0.0.1",
   "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "type": "module",
   "files": [
     "lib",
