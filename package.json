@@ -12,30 +12,30 @@
   ],
   "exports": {
     "./psn": {
-      "types": "./dist/types/psn/index.d.ts",
-      "require": "./dist/psn/index.js",
-      "import": "./dist/psn/index.js"
+      "types": "./lib/types/psn/index.d.ts",
+      "require": "./lib/psn/index.js",
+      "import": "./lib/psn/index.js"
     },
     "./psn/*": {
-      "import": "./dist/psn/*"
+      "import": "./lib/psn/*"
     },
     "./steam": {
-      "types": "./dist/types/steam/index.d.ts",
-      "require": "./dist/steam/index.js",
-      "import": "./dist/steam/index.js"
+      "types": "./lib/types/steam/index.d.ts",
+      "require": "./lib/steam/index.js",
+      "import": "./lib/steam/index.js"
     },
     "./steam/*": {
-      "import": "./dist/steam/*"
+      "import": "./lib/steam/*"
     },
     ".": {
-      "types": "./dist/types/index.d.ts",
-      "require": "./dist/main/index.js",
-      "import": "./dist/main/index.js"
+      "types": "./lib/types/index.d.ts",
+      "require": "./lib/main/index.js",
+      "import": "./lib/main/index.js"
     }
   },
-  "types": "./dist/types/index.d.ts",
-  "main": "./dist/main/index.js",
-  "module": "./dist/main/index.js",
+  "types": "./lib/types/index.d.ts",
+  "main": "./lib/main/index.js",
+  "module": "./lib/main/index.js",
   "scripts": {
     "dev": "vite -c ./config/vite-dev.config.ts",
     "build": "vite build -c ./config/vite-build.config.ts"
